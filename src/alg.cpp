@@ -3,45 +3,45 @@
 #include <cmath>
 #include "alg.h"
 
-bool checkPrime(uint64_t value) {
-  if (value == 1) {
+bool checkPrime(uint64_t value){
+  if (value == 1){
     return false;
   }
-  for (uint64_t i = 2; i <= std::sqrt(value); i++) {
-    if (value % i == 0) {
+  for (uint64_t i = 2; i <= std::sqrt(value); i++){
+    if (value % i == 0){
       return false;
     }
   }
   return true;
 }
 
-uint64_t nPrime(uint64_t n) {
+uint64_t nPrime(uint64_t n){
   uint64_t tmp = 0;
   uint64_t count = 0;
-  while (count != n) {
+  while (count != n){
     tmp++;
-    if (checkPrime(tmp)) {
+    if (checkPrime(tmp)){
       count++;
     }
   }
   return tmp;
 }
 
-uint64_t nextPrime(uint64_t value) {
+uint64_t nextPrime(uint64_t value){
   uint64_t tmp = value + 1;
-  while (true) {
-    if (checkPrime(tmp)) {
+  while (true){
+    if (checkPrime(tmp)){
       return tmp;
-    } else {
+    }else{
       tmp++;
     }
   }
 }
 
-uint64_t sumPrime(uint64_t hbound) {
+uint64_t sumPrime(uint64_t hbound){
   uint64_t su = 0;
-  for (uint64_t i = 2; i <= hbound; i++) {
-    if (checkPrime(i)) {
+  for (uint64_t i = 2; i <= hbound; i++){
+    if (checkPrime(i)){
       su += i;
     }
   }
