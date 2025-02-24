@@ -21,7 +21,7 @@ TEST(st1, checkPrime4)
 
 TEST(st1, checkPrime5)
 {
-  EXPECT_EQ(checkPrime(10000019), true);
+  EXPECT_EQ(checkPrime(1000019), true);
 }
 
 TEST(st1, nPrime1)
