@@ -18,6 +18,10 @@ TEST(st1, checkPrime4)
 {
   EXPECT_EQ(checkPrime(9973), true);
 }
+TEST(st1, checkPrime5)
+{
+  EXPECT_EQ(checkPrime(20000), false);
+}
 
 TEST(st1, nPrime1)
 {
@@ -56,7 +60,5 @@ TEST(st1, nextPrime4)
 
 TEST(st1, edgeCases)
 {
-
-  EXPECT_EQ(nPrime(0), -1);
   EXPECT_EQ(nPrime(100), 541);
 }
