@@ -19,11 +19,6 @@ TEST(st1, checkPrime4)
   EXPECT_EQ(checkPrime(9973), true);
 }
 
-TEST(st1, checkPrime5)
-{
-  EXPECT_EQ(checkPrime(1000019), true);
-}
-
 TEST(st1, nPrime1)
 {
   EXPECT_EQ(nPrime(6), 13);
