@@ -33,17 +33,17 @@ uint64_t nextPrime(uint64_t value) {
     if (checkPrime(tmp)) {
       return tmp;
     } else {
-      tmp++;
+        tmp++;
+      }
     }
   }
-}
 
 uint64_t sumPrime(uint64_t hbound) {
-  uint64_t su = 0;
-  for (uint64_t i = 2; i <= hbound; i++) {
-    if (checkPrime(i)) {
-      su += i;
+    uint64_t su = 0;
+    for (uint64_t i = 2; i <= hbound; i++) {
+      if (checkPrime(i)) {
+        su += i;
+      }
     }
+    return su;
   }
-  return su;
-}
